@@ -8,7 +8,6 @@ services:
       - '8069:8069'
     volumes:
       - ./odoo-web-data:/var/lib/odoo
-      - ./addons:/mnt/extra-addons
     environment:
       - PASSWORD_FILE=/run/secrets/postgresql_password
     secrets:
